@@ -1,0 +1,35 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ #demo {
+     /* 用于消除横向滚动条 */
+     word-break: break-all;
+ }
+
+ #div1 {
+     position: fixed;
+     top: 20px;
+     right: 50%;
+     box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+ }
+
+ @media (max-width:500px) {
+     #html {
+         height: 70vh;
+         overflow: auto;
+     }
+
+     #div1Wrapper {
+         height: 30vh;
+
+     }
+
+     #div1 {
+         position: relative;
+         top: 0;
+         right: -20%;
+     }
+ }
